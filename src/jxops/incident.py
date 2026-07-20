@@ -118,9 +118,12 @@ def render_report(analysis: IncidentAnalysis, source_name: str) -> str:
 
     return f"""# Incident Analysis
 
-**Status:** {status}  
-**Source:** `{source_name}`  
-**Generated:** {generated}  
+**Status:** {status}
+
+**Source:** `{source_name}`
+
+**Generated:** {generated}
+
 **Lines examined:** {analysis.line_count}
 
 ## Evidence
@@ -168,4 +171,3 @@ def run_analysis(log_path: Path, output_path: Path) -> int:
         )
     print(f"Markdown report: {output_path.resolve()}")
     return 1 if not analysis.findings else 0
-
