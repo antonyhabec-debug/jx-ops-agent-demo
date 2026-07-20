@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 from collections.abc import Sequence
+from pathlib import Path
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -16,6 +17,12 @@ def build_parser() -> argparse.ArgumentParser:
 
     routes = subparsers.add_parser("routes", help="Validate and visualize map routes.")
     routes.add_argument("--demo", action="store_true", help="Run the built-in route demo.")
+    routes.add_argument(
+        "--output",
+        type=Path,
+        default=Path("artifacts/routes-demo.svg"),
+        help="SVG output path (default: artifacts/routes-demo.svg).",
+    )
 
     boot = subparsers.add_parser("boot", help="Run a headless boot simulation.")
     boot.add_argument("--mock", action="store_true", help="Use sanitized mock services.")
@@ -31,5 +38,11 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: Sequence[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    if args.command == "routes":
+        if not args.demo:
+            parser.error("routes requires --demo")
+        from jxops.routes import run_demo
+
+        return run_demo(args.output)
     parser.error(f"The {args.command!r} capability has not been installed yet.")
     return 2
