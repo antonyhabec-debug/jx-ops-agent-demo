@@ -1,0 +1,17 @@
+﻿JX OPS / HEADLESS BOOT
+2026-07-20T10:51:21.291+10:00 INFO  lane=buildweek-sandbox mode=mock event=boot-start
+2026-07-20T10:51:21.375+10:00 PASS  stage=load-config    elapsed=080ms detail="validated isolated demo configuration"
+2026-07-20T10:51:21.456+10:00 PASS  stage=database-check elapsed=080ms detail="in-memory data adapter responded"
+2026-07-20T10:51:21.536+10:00 PASS  stage=world-spawn    elapsed=080ms detail="synthetic world and AOI index created"
+2026-07-20T10:51:21.617+10:00 PASS  stage=ready          elapsed=080ms detail="health gate accepted the mock lane"
+
+HEALTH SUMMARY
++----------------+--------+
+| component      | status |
++----------------+--------+
+| config         | PASS   |
+| data-adapter   | PASS   |
+| world          | PASS   |
+| readiness      | PASS   |
++----------------+--------+
+Overall: HEALTHY (320ms)

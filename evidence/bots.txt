@@ -1,0 +1,284 @@
+﻿JX OPS / BOT SWARM  tick 01/14
++----------------+
+|                |
+|                |
+|                |
+| o*o*o*o5o6o7o8 |
+| *    XXX     o |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=06 route=06 engage=00 regroup=00
+Recent AOI events:
+-
+-
+-
+-
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 02/14
++----------------+
+|                |
+|                |
+|                |
+| oo**oo*5oo67oo |
+| *    XXX     8 |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=12 engage=00 regroup=00
+Recent AOI events:
+-
+-
+-
+-
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 03/14
++----------------+
+|                |
+|                |
+|                |
+| *oo**oo*5oo67o |
+| o    XXX     8 |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=11 engage=01 regroup=00
+Recent AOI events:
+t=03 AOI leave B03 zone=west
+t=03 AOI enter B03 zone=center
+t=03 AOI leave B11 zone=west
+t=03 AOI enter B11 zone=center
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 04/14
++----------------+
+|                |
+|                |
+|                |
+| o*oo**oo*5oo67 |
+| o    XXX     8 |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=11 engage=01 regroup=00
+Recent AOI events:
+t=04 AOI leave B05 zone=center
+t=04 AOI enter B05 zone=east
+t=04 AOI leave B10 zone=west
+t=04 AOI enter B10 zone=center
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 05/14
++----------------+
+|                |
+|                |
+|                |
+| oo*oo**oo*5oo6 |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=11 engage=00 regroup=01
+Recent AOI events:
+t=05 AOI leave B04 zone=center
+t=05 AOI enter B04 zone=east
+t=05 AOI leave B12 zone=center
+t=05 AOI enter B12 zone=east
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 06/14
++----------------+
+|                |
+|                |
+|                |
+| ooo*oo**oo*5o8 |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=10 engage=01 regroup=01
+Recent AOI events:
+t=05 AOI leave B04 zone=center
+t=05 AOI enter B04 zone=east
+t=05 AOI leave B12 zone=center
+t=05 AOI enter B12 zone=east
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 07/14
++----------------+
+|                |
+|                |
+|                |
+| oooo*oo**oo**o |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=09 engage=02 regroup=01
+Recent AOI events:
+t=07 AOI leave B01 zone=west
+t=07 AOI enter B01 zone=center
+t=07 AOI leave B09 zone=west
+t=07 AOI enter B09 zone=center
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 08/14
++----------------+
+|                |
+|                |
+|                |
+| ooooo*oo**o8*5 |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=09 engage=01 regroup=02
+Recent AOI events:
+t=08 AOI leave B03 zone=center
+t=08 AOI enter B03 zone=east
+t=08 AOI leave B11 zone=center
+t=08 AOI enter B11 zone=east
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 09/14
++----------------+
+|                |
+|                |
+|                |
+| oooooo*oo**oo* |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=09 engage=00 regroup=03
+Recent AOI events:
+t=09 AOI leave B02 zone=center
+t=09 AOI enter B02 zone=east
+t=09 AOI leave B10 zone=center
+t=09 AOI enter B10 zone=east
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 10/14
++----------------+
+|                |
+|                |
+|                |
+| ooooooo*o8**76 |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=08 engage=01 regroup=03
+Recent AOI events:
+t=09 AOI leave B02 zone=center
+t=09 AOI enter B02 zone=east
+t=09 AOI leave B10 zone=center
+t=09 AOI enter B10 zone=east
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 11/14
++----------------+
+|                |
+|                |
+|                |
+| oooooooo*oo**o |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=06 engage=03 regroup=03
+Recent AOI events:
+t=09 AOI leave B10 zone=center
+t=09 AOI enter B10 zone=east
+t=11 AOI leave B08 zone=east
+t=11 AOI enter B08 zone=center
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 12/14
++----------------+
+|                |
+|                |
+|                |
+| ooooooo8o*76** |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=06 engage=02 regroup=04
+Recent AOI events:
+t=12 AOI leave B01 zone=center
+t=12 AOI enter B01 zone=east
+t=12 AOI leave B09 zone=center
+t=12 AOI enter B09 zone=east
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 13/14
++----------------+
+|                |
+|                |
+|                |
+| oooooo8oo7*oo* |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=06 engage=00 regroup=06
+Recent AOI events:
+t=12 AOI leave B01 zone=center
+t=12 AOI enter B01 zone=east
+t=12 AOI leave B09 zone=center
+t=12 AOI enter B09 zone=east
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+JX OPS / BOT SWARM  tick 14/14
++----------------+
+|                |
+|                |
+|                |
+| ooooo8oo76o*5* |
+| o    XXX     * |
+|                |
+|           XX   |
+|            X   |
+|                |
++----------------+
+idle=00 route=04 engage=02 regroup=06
+Recent AOI events:
+t=12 AOI leave B09 zone=center
+t=12 AOI enter B09 zone=east
+t=14 AOI leave B07 zone=east
+t=14 AOI enter B07 zone=center
+Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route
+
+Simulation health: PASS
+Bots: 12 | Ticks: 14 | AOI events: 34
+States: engage=2, regroup=6, route=4
+Final SVG: D:\QuanLy_ServerJX\BUILDWEEK_2026\jx-ops-agent-demo\artifacts\bots-final.svg

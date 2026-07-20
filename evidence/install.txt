@@ -1,0 +1,19 @@
+﻿Obtaining file:///D:/QuanLy_ServerJX/BUILDWEEK_2026/jx-ops-agent-demo
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: jx-ops-agent-demo
+  Building editable for jx-ops-agent-demo (pyproject.toml): started
+  Building editable for jx-ops-agent-demo (pyproject.toml): finished with status 'done'
+  Created wheel for jx-ops-agent-demo: filename=jx_ops_agent_demo-0.1.0-0.editable-py3-none-any.whl size=5468 sha256=def7ceab8b140b86695d0864bec00eb2c59e674d3350aa1984e8486a332aace5
+  Stored in directory: C:\Users\Admin\AppData\Local\Temp\pip-ephem-wheel-cache-joyewc6c\wheels\7b\61\82\fe5792d285f1f98d9112367b9af0bda4c5cb945484a03f51b5
+Successfully built jx-ops-agent-demo
+Installing collected packages: jx-ops-agent-demo
+Successfully installed jx-ops-agent-demo-0.1.0
+[notice] A new release of pip is available: 24.0 -> 26.1.2
+[notice] To update, run: D:\QuanLy_ServerJX\BUILDWEEK_2026\jx-ops-agent-demo\.venv-smoke\Scripts\python.exe -m pip install --upgrade pip

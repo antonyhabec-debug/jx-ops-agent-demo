@@ -1,0 +1,35 @@
+﻿test_full_order_reaches_healthy (test_boot.MockBootTests.test_full_order_reaches_healthy) ... ok
+test_mock_boot_command_succeeds_without_delay (test_boot.MockBootTests.test_mock_boot_command_succeeds_without_delay) ... ok
+test_out_of_order_stage_is_rejected (test_boot.MockBootTests.test_out_of_order_stage_is_rejected) ... ok
+test_final_svg_contains_bot_and_aoi_summary (test_bots.BotSimulationTests.test_final_svg_contains_bot_and_aoi_summary) ... ok
+test_population_limits_are_enforced (test_bots.BotSimulationTests.test_population_limits_are_enforced) ... ok
+test_swarm_uses_only_validated_route_tiles (test_bots.BotSimulationTests.test_swarm_uses_only_validated_route_tiles) ... ok
+test_detects_warp_loop_and_region_churn (test_incident.IncidentAnalysisTests.test_detects_warp_loop_and_region_churn) ... ok
+test_missing_log_returns_usage_error (test_incident.IncidentAnalysisTests.test_missing_log_returns_usage_error) ... ok
+test_report_has_bounded_incident_sections (test_incident.IncidentAnalysisTests.test_report_has_bounded_incident_sections) ... ok
+test_demo_rejects_old_route_and_accepts_detour (test_routes.RouteValidationTests.test_demo_rejects_old_route_and_accepts_detour) ... ok
+test_non_neighbor_step_is_rejected (test_routes.RouteValidationTests.test_non_neighbor_step_is_rejected) ... ok
+test_svg_contains_both_route_colors (test_routes.RouteValidationTests.test_svg_contains_both_route_colors) ... ok
+System.Management.Automation.RemoteException
+----------------------------------------------------------------------
+Ran 12 tests in 0.016s
+System.Management.Automation.RemoteException
+OK
+JX OPS / HEADLESS BOOT
+2026-07-20T10:53:14.528+10:00 INFO  lane=buildweek-sandbox mode=mock event=boot-start
+2026-07-20T10:53:14.528+10:00 PASS  stage=load-config    elapsed=001ms detail="validated isolated demo configuration"
+2026-07-20T10:53:14.528+10:00 PASS  stage=database-check elapsed=001ms detail="in-memory data adapter responded"
+2026-07-20T10:53:14.528+10:00 PASS  stage=world-spawn    elapsed=001ms detail="synthetic world and AOI index created"
+2026-07-20T10:53:14.528+10:00 PASS  stage=ready          elapsed=001ms detail="health gate accepted the mock lane"
+
+HEALTH SUMMARY
++----------------+--------+
+| component      | status |
++----------------+--------+
+| config         | PASS   |
+| data-adapter   | PASS   |
+| world          | PASS   |
+| readiness      | PASS   |
++----------------+--------+
+Overall: HEALTHY (4ms)
+Log file not found: C:\Users\Admin\AppData\Local\Temp\tmp9y1bv30g\missing.log

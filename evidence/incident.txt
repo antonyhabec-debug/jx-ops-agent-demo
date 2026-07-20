@@ -1,0 +1,6 @@
+﻿JX OPS / INCIDENT ANALYZER
+Source: D:\QuanLy_ServerJX\BUILDWEEK_2026\jx-ops-agent-demo\samples\incident-demo.log
+Lines examined: 16
+[CRITICAL] warp-loop: bot-07 (6 events)
+[HIGH] region-churn: bot-12@market-edge (6 events)
+Markdown report: D:\QuanLy_ServerJX\BUILDWEEK_2026\jx-ops-agent-demo\artifacts\incident-report.md

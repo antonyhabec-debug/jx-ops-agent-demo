@@ -141,7 +141,7 @@ def render_terminal(
             elif point in simulation.grid.traps:
                 cells.append("X")
             elif point in route_tiles:
-                cells.append(".")
+                cells.append("o")
             else:
                 cells.append(" ")
         rows.append("|" + "".join(cells) + "|")
@@ -163,7 +163,7 @@ def render_terminal(
             states,
             "Recent AOI events:",
             *event_lines,
-            "Legend: 1-F=bot, *=stacked bots, X=trap, .=validated route",
+            "Legend: 1-F=bot, *=stacked bots, X=trap, o=validated route",
         ]
     )
     if interactive:

@@ -1,0 +1,5 @@
+﻿JX OPS / ROUTE VALIDATOR
+Map: synthetic-sector-380 (16x9)
+Rejected route: FAIL - 3 trap hits at [(6, 4), (7, 4), (8, 4)]
+Candidate route: PASS - 16 steps
+SVG overlay: D:\QuanLy_ServerJX\BUILDWEEK_2026\jx-ops-agent-demo\artifacts\routes-demo.svg
