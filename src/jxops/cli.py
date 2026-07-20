@@ -26,6 +26,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     boot = subparsers.add_parser("boot", help="Run a headless boot simulation.")
     boot.add_argument("--mock", action="store_true", help="Use sanitized mock services.")
+    boot.add_argument("--delay", type=float, default=0.08, help="Delay per boot stage.")
 
     incident = subparsers.add_parser("incident", help="Analyze an operational log.")
     incident.add_argument("--analyze", type=Path, metavar="LOGFILE", help="Log file to analyze.")
@@ -64,6 +65,14 @@ def main(argv: Sequence[str] | None = None) -> int:
         from jxops.routes import run_demo
 
         return run_demo(args.output)
+    if args.command == "boot":
+        if not args.mock:
+            parser.error("boot requires --mock")
+        if args.delay < 0:
+            parser.error("--delay cannot be negative")
+        from jxops.boot import run_mock_boot
+
+        return run_mock_boot(args.delay)
     if args.command == "incident":
         if args.analyze is None:
             parser.error("incident requires --analyze LOGFILE")
