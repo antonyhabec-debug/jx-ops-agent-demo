@@ -1,0 +1,16 @@
+2026-07-20T00:00:00Z INFO WORLD event=ready zone=demo
+2026-07-20T00:00:01Z INFO MOVE actor=bot-07 tile=5,4
+2026-07-20T00:00:02Z WARN WARP actor=bot-07 from=west-bank to=east-bank reason=hazard-boundary
+2026-07-20T00:00:03Z WARN WARP actor=bot-07 from=east-bank to=west-bank reason=recovery
+2026-07-20T00:00:04Z WARN WARP actor=bot-07 from=west-bank to=east-bank reason=hazard-boundary
+2026-07-20T00:00:05Z WARN WARP actor=bot-07 from=east-bank to=west-bank reason=recovery
+2026-07-20T00:00:06Z WARN WARP actor=bot-07 from=west-bank to=east-bank reason=hazard-boundary
+2026-07-20T00:00:07Z WARN WARP actor=bot-07 from=east-bank to=west-bank reason=recovery
+2026-07-20T00:00:08Z INFO AOI action=enter entity=bot-12 region=market-edge observer=watcher-02
+2026-07-20T00:00:09Z INFO AOI action=leave entity=bot-12 region=market-edge observer=watcher-02
+2026-07-20T00:00:10Z INFO AOI action=enter entity=bot-12 region=market-edge observer=watcher-02
+2026-07-20T00:00:11Z INFO AOI action=leave entity=bot-12 region=market-edge observer=watcher-02
+2026-07-20T00:00:12Z INFO AOI action=enter entity=bot-12 region=market-edge observer=watcher-02
+2026-07-20T00:00:13Z INFO AOI action=leave entity=bot-12 region=market-edge observer=watcher-02
+2026-07-20T00:00:14Z INFO HEARTBEAT component=world status=healthy
+

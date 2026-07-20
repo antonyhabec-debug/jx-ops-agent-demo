@@ -28,7 +28,13 @@ def build_parser() -> argparse.ArgumentParser:
     boot.add_argument("--mock", action="store_true", help="Use sanitized mock services.")
 
     incident = subparsers.add_parser("incident", help="Analyze an operational log.")
-    incident.add_argument("--analyze", metavar="LOGFILE", help="Log file to analyze.")
+    incident.add_argument("--analyze", type=Path, metavar="LOGFILE", help="Log file to analyze.")
+    incident.add_argument(
+        "--output",
+        type=Path,
+        default=Path("artifacts/incident-report.md"),
+        help="Markdown output path (default: artifacts/incident-report.md).",
+    )
 
     bots = subparsers.add_parser("bots", help="Run the bot population simulation.")
     bots.add_argument("--sim", action="store_true", help="Run the built-in simulation.")
@@ -44,5 +50,11 @@ def main(argv: Sequence[str] | None = None) -> int:
         from jxops.routes import run_demo
 
         return run_demo(args.output)
+    if args.command == "incident":
+        if args.analyze is None:
+            parser.error("incident requires --analyze LOGFILE")
+        from jxops.incident import run_analysis
+
+        return run_analysis(args.analyze, args.output)
     parser.error(f"The {args.command!r} capability has not been installed yet.")
     return 2
