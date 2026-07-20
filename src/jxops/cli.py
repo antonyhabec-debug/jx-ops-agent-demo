@@ -38,6 +38,20 @@ def build_parser() -> argparse.ArgumentParser:
 
     bots = subparsers.add_parser("bots", help="Run the bot population simulation.")
     bots.add_argument("--sim", action="store_true", help="Run the built-in simulation.")
+    bots.add_argument("--bots", type=int, default=12, help="Population size from 10 to 20.")
+    bots.add_argument("--ticks", type=int, default=14, help="Number of simulation ticks.")
+    bots.add_argument("--delay", type=float, default=0.12, help="Delay between animated ticks.")
+    bots.add_argument(
+        "--no-animate",
+        action="store_true",
+        help="Print frames without terminal cursor control.",
+    )
+    bots.add_argument(
+        "--output",
+        type=Path,
+        default=Path("artifacts/bots-final.svg"),
+        help="Final SVG path (default: artifacts/bots-final.svg).",
+    )
     return parser
 
 
@@ -56,5 +70,23 @@ def main(argv: Sequence[str] | None = None) -> int:
         from jxops.incident import run_analysis
 
         return run_analysis(args.analyze, args.output)
+    if args.command == "bots":
+        if not args.sim:
+            parser.error("bots requires --sim")
+        if not 10 <= args.bots <= 20:
+            parser.error("--bots must be between 10 and 20")
+        if args.ticks < 1:
+            parser.error("--ticks must be positive")
+        if args.delay < 0:
+            parser.error("--delay cannot be negative")
+        from jxops.bots import run_simulation
+
+        return run_simulation(
+            args.output,
+            bot_count=args.bots,
+            ticks=args.ticks,
+            delay=args.delay,
+            animate=not args.no_animate,
+        )
     parser.error(f"The {args.command!r} capability has not been installed yet.")
     return 2
